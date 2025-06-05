@@ -1,0 +1,1765 @@
+CRITICAL - 2025-06-05 15:46:13 --> CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL "/" is not a valid URL.
+in SYSTEMPATH/HTTP/SiteURI.php on line 199.
+ 1 SYSTEMPATH/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH/CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:46:13 --> ErrorException: Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL "/" is not a valid URL. in /opt/lampp/htdocs/libroApi/system/HTTP/SiteURI.php:199
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 /opt/lampp/htdocs/libroApi/system/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL "/" is not a valid URL.
+#0 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 /opt/lampp/htdocs/libroApi/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 /opt/lampp/htdocs/libroApi/system/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 /opt/lampp/htdocs/libroApi/system/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 /opt/lampp/htdocs/libroApi/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 /opt/lampp/htdocs/libroApi/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 /opt/lampp/htdocs/libroApi/system/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 /opt/lampp/htdocs/libroApi/system/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 /opt/lampp/htdocs/libroApi/system/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in SYSTEMPATH/HTTP/SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-06-05 15:47:12 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:47:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:47:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:47:12 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:48:01 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:48:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:48:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:48:01 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:48:18 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:48:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:48:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:48:18 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:49:24 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:49:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:24 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:49:25 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:49:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:25 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:49:26 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:49:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:26 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:49:26 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:49:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:26 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:49:26 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:49:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:49:26 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:50:00 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:50:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:50:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:50:00 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:50:53 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 15:50:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:50:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:50:53 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:57:26 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 15:57:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:57:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:57:26 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:58:42 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 15:58:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:58:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:58:42 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:59:02 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 15:59:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:59:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:59:02 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 15:59:03 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 15:59:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:59:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 15:59:03 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 16:00:07 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 16:00:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:00:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:00:07 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 16:00:08 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 16:00:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:00:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:00:08 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(29): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 16:00:50 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 16:00:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:00:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:00:50 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 16:01:58 --> mysqli_sql_exception: Table 'librosbd.categorias' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `categor...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 16:01:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:01:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 16:01:58 --> [Caused by] mysqli_sql_exception: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:14:01 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autores
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autores', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:14:15 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autores
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autores', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:14:17 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autores
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autores', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:15:38 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:16:12 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:16:45 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 17:17:37 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/system/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/system/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->index()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 17:17:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 2 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:17:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 4 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:17:37 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *
+FROM `libros`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `libros`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `libros`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `libros`', [], false)
+ 5 SYSTEMPATH/Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Libro.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:17:46 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:18:03 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:18:06 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:19:04 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:19:06 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:19:11 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:20:03 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 17:21:40 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 17:21:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:21:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:21:40 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 17:21:48 --> mysqli_sql_exception: Table 'librosbd.autores' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 17:21:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:21:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:21:48 --> [Caused by] mysqli_sql_exception: Table 'librosbd.autores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `autores`.*
+FROM `libro_autor`
+JOIN `autores` ON `autores`.`id` = `libro_autor`.`autor_id`
+WHERE `libro_autor`.`libro_id` = :libro_autor.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(88): App\Models\LibroModel->autores('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 17:22:25 --> mysqli_sql_exception: Table 'librosbd.categorias' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `categor...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 17:22:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:22:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:22:25 --> [Caused by] mysqli_sql_exception: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 17:22:26 --> mysqli_sql_exception: Table 'librosbd.categorias' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `categor...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 17:22:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 2 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:22:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 4 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:22:26 --> [Caused by] mysqli_sql_exception: Table 'librosbd.categorias' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `categorias`.*
+FROM `libro_categoria`
+JOIN `categorias` ON `categorias`.`id` = `libro_categoria`.`categoria_id`
+WHERE `libro_categoria`.`libro_id` = :libro_categoria.libro_id:', [...], false)
+ 5 APPPATH/Models/LibroModel.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Libro.php(89): App\Models\LibroModel->categorias('1')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->show('1')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:22:59 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:24:04 --> BadMethodCallException: Call to undefined method App\Models\LibroModel::autor
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Libro.php(29): CodeIgniter\Model->__call('autor', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->index()
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 17:45:23 --> mysqli_sql_exception: Table 'librosbd.libros' doesn't exist in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `libros`...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `libros`...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `libros`...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `libros`...', Array, false)
+#4 /opt/lampp/htdocs/libroApi/app/Models/CategoriaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/libroApi/app/Controllers/Categoria.php(94): App\Models\CategoriaModel->libros('7')
+#6 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Categoria->delete('7')
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-06-05 17:45:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = :libro_categoria.categoria_id:', [...], false)
+ 2 APPPATH/Models/CategoriaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Categoria.php(94): App\Models\CategoriaModel->libros('7')
+ 4 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Categoria->delete('7')
+ 5 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:45:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = \'7\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = \'7\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = :libro_categoria.categoria_id:', [...], false)
+ 4 APPPATH/Models/CategoriaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Categoria.php(94): App\Models\CategoriaModel->libros('7')
+ 6 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Categoria->delete('7')
+ 7 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 17:45:23 --> [Caused by] mysqli_sql_exception: Table 'librosbd.libros' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = \'7\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = \'7\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = \'7\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `libros`.*
+FROM `libro_categoria`
+JOIN `libros` ON `libros`.`id` = `libro_categoria`.`libro_id`
+WHERE `libro_categoria`.`categoria_id` = :libro_categoria.categoria_id:', [...], false)
+ 5 APPPATH/Models/CategoriaModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Categoria.php(94): App\Models\CategoriaModel->libros('7')
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Categoria->delete('7')
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 20:22:05 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 336.
+ 1 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH/Validation/Validation.php(200): CodeIgniter\Validation\Validation->processRules('autor_id', 'autor_id', null, [...], [...])
+ 3 SYSTEMPATH/Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Libro.php(90): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->createWithRelations()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-06-05 20:22:15 --> mysqli_sql_exception: Column 'autor_id' cannot be null in /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/libroApi/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `li...', 0)
+#1 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 /opt/lampp/htdocs/libroApi/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', NULL, false)
+#4 /opt/lampp/htdocs/libroApi/system/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 /opt/lampp/htdocs/libroApi/app/Models/LibroModel.php(49): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 /opt/lampp/htdocs/libroApi/app/Controllers/Libro.php(116): App\Models\LibroModel->addAutores(7, Array)
+#7 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(943): App\Controllers\Libro->createWithRelations()
+#8 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+#9 /opt/lampp/htdocs/libroApi/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/libroApi/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-05 20:22:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'autor_id' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)', null, false)
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH/Models/LibroModel.php(49): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH/Controllers/Libro.php(116): App\Models\LibroModel->addAutores(7, [...])
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->createWithRelations()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 20:22:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'autor_id' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)', null, false)
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 APPPATH/Models/LibroModel.php(49): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 APPPATH/Controllers/Libro.php(116): App\Models\LibroModel->addAutores(7, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->createWithRelations()
+ 8 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 20:22:15 --> [Caused by] mysqli_sql_exception: Column 'autor_id' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `libro_autor` (`autor_id`, `created_at`, `libro_id`)
+VALUES (NULL,\'2025-06-05 20:22:15\',7)', null, false)
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH/Models/LibroModel.php(49): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 APPPATH/Controllers/Libro.php(116): App\Models\LibroModel->addAutores(7, [...])
+ 8 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->createWithRelations()
+ 9 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-05 20:27:56 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 588.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH/Validation/Validation.php(498): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH/Controller.php(154): CodeIgniter\Validation\Validation->withRequest(Object(CodeIgniter\HTTP\IncomingRequest))
+ 4 APPPATH/Controllers/Libro.php(98): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Libro->createWithRelations()
+ 6 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libro))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
