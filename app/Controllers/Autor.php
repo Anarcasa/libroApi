@@ -33,7 +33,6 @@ class Autor extends BaseController
         return $this->respond($autor);
     }
 
-
     // Crear un nuevo autor
     public function create()
     {
@@ -55,7 +54,6 @@ class Autor extends BaseController
         return $this->respondCreated($autor);
     }
 
- 
     // Actualizar un autor
     public function update($id = null)
     {
@@ -114,4 +112,77 @@ class Autor extends BaseController
         $libros = $this->autorModel->libros($autorId);
         return $this->respond($libros);
     }
+
+
+     public function index()
+    {
+        $data = $this->CosasModel->findAll();
+        return $this->respond($data);
+    }
+
+    public function show($id = null)
+    {
+        if ($id === null) {
+            return $this->failNotFound('No se proporcionó ID');
+        }
+
+        $data = $this->CosasModel->find($id);
+        if ($data === null) {
+            return $this->failNotFound('No existe el registro con id: ' . $id);
+        }
+
+        return $this->respond($data);
+    }
+
+    public function create()
+    {
+        $data = $this->request->getJSON();
+
+        if(!$this->CosasModel->save($data)){
+            return $this->fail($this->CosasModel->errors());
+        }
+
+        return $this->respondCreated(['message' => 'Registro creado boen']);
+    }
+
+    public function update($id = null)
+    {
+        if ($id === null){
+            return $this->failNotFound('No se proporciono un id');
+        }
+
+        $json = $this->request->getJSON();
+        if(!$this->CosasModel->find($id)){
+            return $this->failNotFound('no existe' .$id);
+        }
+
+        if(!$this->CosasModel->update($id, $json)){
+            return $this->fail($this->CosasModel->errors());
+        }
+        return $this->respond(['message' => 'Registro actualizado correctamente']);
+    }
+    
+    public function delete($id = null)
+    {
+        if ($id === null){
+            return $this->failNotFound('No se proporcionó un id');
+        }
+
+        if(!$this->CosasModel->find($id))
+        {
+            return !$this->failNotFound('No existe el registro' .$id);
+        }
+
+        if (!$this->CosasModel->delete($id)){
+            return $this->fail($this->CosasModel->errors());
+        }
+
+        return $this->respondDeleted(['message' => 'Registro eliminado existosamente']);
+    }
+
+
+
+
+
+
 }

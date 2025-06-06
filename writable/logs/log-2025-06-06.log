@@ -1,0 +1,14 @@
+CRITICAL - 2025-06-06 22:13:51 --> BadMethodCallException: Call to undefined method App\Models\CategoriaModel::libros
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Categoria.php(94): CodeIgniter\Model->__call('libros', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Categoria->delete('9')
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-06 22:15:05 --> BadMethodCallException: Call to undefined method App\Models\CategoriaModel::libros
+in SYSTEMPATH/Model.php on line 879.
+ 1 APPPATH/Controllers/Categoria.php(94): CodeIgniter\Model->__call('libros', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(943): App\Controllers\Categoria->delete('9')
+ 3 SYSTEMPATH/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

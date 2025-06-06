@@ -25,4 +25,15 @@ class CategoriaModel extends Model
         
         return $categoria['id'];
     }
+
+    // Relación muchos a muchos con Libros
+    public function libros($categoriaId)
+    {
+        return $this->db->table('libro_categoria')
+            ->select('libro.*')
+            ->join('libro', 'libro.id = libro_categoria.libro_id')
+            ->where('libro_categoria.categoria_id', $categoriaId)
+            ->get()
+            ->getResultArray();
+    }
 }
